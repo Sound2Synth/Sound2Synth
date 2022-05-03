@@ -1,0 +1,48 @@
+{
+    "root": "/Users/<USERNAME>/",
+    "data_dir": "/Users/<USERNAME>/data/",
+    "temp_output_dir": "./__temp__/",
+    "audio_output_dir": "/Users/<USERNAME>/data/generated/",
+    "midi_settings_dir": "./midi_settings/",
+    "server_root": "<SERVER>:/home/<USERNAME>/",
+    "server_data_dir": "<SERVER>:/home/<USERNAME>/data/",
+    "server_code_dir": "<SERVER>:/home/<USERNAME>/Sound2Synth",
+    "rsync_time_interval": 600,
+
+    "default_midi_settings_args": {
+        "pitch_range": [0,128],
+        "default_pitch": 60,
+        "velocity": 127,
+        "ticks_per_beat": 480,
+        "duration_beats": 4,
+        "recording_beats": 8,
+        "bpm": 120
+    },
+
+    "default_torchaudio_args": {
+        "sample_rate": 48000,
+            "// sample_rate": 44100,
+        "input_size": 377,
+            "// input_size": 347,
+        "audio_length": 192819,
+            "// audio_length": 177152,
+        "n_fft": 2048,
+        "win_length": null,
+        "hop_length": 512,
+        "power": 2.0,
+        "center": true,
+        "pad_mode": "reflect",
+        "norm": "slaney",
+        "onesided": true,
+        "n_mels": 128,
+        "mel_scale": "htk",
+        "n_mfcc": 13
+    },
+
+    "default_metric_args": {
+        "n_mfcc": 30,
+        "n_ffts": [  64, 128, 256, 512,1024,2048],
+        "n_hops": [  16,  32,  64, 128, 256, 512],
+        "alpha": 0.1
+    }
+}

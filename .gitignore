@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+__pycache__
+__temp__
+examples/
+experiment/
+inference/
+lightning_logs/
+midi_settings/
+runs/
+server/input/
+server/output/
+Sound2Synth/
+tasks/
+wandb/
