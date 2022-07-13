@@ -3,3 +3,8 @@ PyAU (Audio Unit for Python) is a closed-source python library, which provides P
 Sound2Synth is developed with PyAU dependency. We do not have the right to hold and public PyAU in our code repository. However, `PyAU` functions are used only for running synthesizer instances (mainly used in `utils/pyau_utils.py`, please check out this file if you are interested in its usage), which is not necessary during training, and is almost independent of our pipeline.
 
 Also, PyAU is built upon JUCE AudioKit. JUCE is a partially open-source cross-platform C++ application framework, used for the development of desktop and mobile applications. You can learn more about JUCE at its official website: [JUCE](https://juce.com/).
+
+UPD. 2022.07.13:
+
+We have released a plug-in for replacing the PyAU requirement. Please check out https://github.com/Sound2Synth/Tracktion4Sound2Synth.
+

@@ -146,7 +146,7 @@ def initialize_midi_settings(
 ):
     CreateFolder(midi_settings_dir)
     for pitch in range(pitch_range[0],pitch_range[1]):
-        midi = mido.MidiFile()
+        midi = mido.MidiFile(type=0)
         track = mido.MidiTrack()
         midi.tracks.append(track)
 

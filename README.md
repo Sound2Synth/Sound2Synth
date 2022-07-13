@@ -25,17 +25,21 @@ pip3 install -r requirements.txt
 
 3. Configure paths and parameters in `config.json`. Please find and replace keywords including `<USERNAME>`, `<SERVER>`. To use `wandb` logging, you may also need to change `<WANDB_ENTITY>`.
 
-4. Fix `PyAU` dependency according to your needs. For more details, please refer to [This Document](./PyAU/README.txt). It is recommended to run all programs related to synthesizer access with the following environment (implemented in `run.sh`):
+4. Fix `PyAU` dependency according to your needs. For more details, please refer to [this document](./PyAU/README.txt). It is recommended to run all programs related to synthesizer access with the following environment (implemented in `run.sh`):
 ```bash
 export PYTHONPATH="./"
 export QT_MAC_WANTS_LAYER=1
 ```
 
+UPD. 2022.07.13:
+
+We have released a plug-in for replacing the PyAU requirement. Please check out [Tracktion4Sound2Synth](https://github.com/Sound2Synth/Tracktion4Sound2Synth).
+
 <br/>
 
 ## Dataset Generation
 
-1. This repo does not hold Dexed preset libraries. Please obtain organized Dexed preset libraries from online communities or any other way. For example, you can download some presets from [This Link](https://www.audiopluginguy.com/free-dexed-plus-tonnes-patches/). Put the obtained presets under `data_dir` as what is set in the `config.json` file.
+1. This repo does not hold Dexed preset libraries. Please obtain organized Dexed preset libraries from online communities or any other way. For example, you can download some presets from [this link](https://www.audiopluginguy.com/free-dexed-plus-tonnes-patches/). Put the obtained presets under `data_dir` as what is set in the `config.json` file.
 
 2. Modify and run `preprocess/dexed.py` to preprocess datasets according to your needs.
 ```bash
