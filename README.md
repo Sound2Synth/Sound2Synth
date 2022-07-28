@@ -91,11 +91,18 @@ Trained checkpoints for directly using the Sound2SYnth plug-in server will be up
 ## Citation
 
 ```
-@inproceedings{sound2synth,
+@inproceedings{ijcai2022-682,
   title     = {Sound2Synth: Interpreting Sound via FM Synthesizer Parameters Estimation},
   author    = {Chen, Zui and Jing, Yansen and Yuan, Shengcheng and Xu, Yifei and Wu, Jian and Zhao, Hang},
-  booktitle = {AI, the Arts and Creativity – Special Track of the 31st International Joint Conference on Artificial Intelligence},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on
+               Artificial Intelligence, {IJCAI-22}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Lud De Raedt},
+  pages     = {4921--4928},
   year      = {2022},
+  month     = {7},
+  note      = {AI and Arts},
+  doi       = {10.24963/ijcai.2022/682},
+  url       = {https://doi.org/10.24963/ijcai.2022/682},
 }
 ```
